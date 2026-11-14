@@ -288,7 +288,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=397778607]
-collision_layer = 3
+collision_layer = 2
 script = ExtResource("1_mitmf")
 
 [node name="CollisionBox" type="CollisionShape2D" parent="." unique_id=449771243]
@@ -302,6 +302,7 @@ animation = &"Death"
 autoplay = "Idle"
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=2103579018]
+collision_layer = 2
 
 [node name="Collision" type="CollisionShape2D" parent="Hitbox" unique_id=758696748]
 position = Vector2(0, -5)

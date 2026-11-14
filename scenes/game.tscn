@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tileset.png" id="1_0rleu"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_c7num"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/enemy.tscn" id="3_lnu2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_0rleu")
@@ -133,3 +134,6 @@ layer_0/tile_data = PackedInt32Array(65536, 0, 0, 131072, 0, 1, 196608, 0, 2, 65
 
 [node name="Player" parent="." unique_id=397778607 instance=ExtResource("2_c7num")]
 position = Vector2(23, 16)
+
+[node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("3_lnu2h")]
+position = Vector2(231, 8)

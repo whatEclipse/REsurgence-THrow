@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dr08pijwig0ao"]
+
+[ext_resource type="Texture2D" uid="uid://b1b04wluy3gfx" path="res://assets/spawn_point.png" id="1_ebynj"]
+
+[node name="SpawnPoint" type="Node2D" unique_id=1508777403]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=122332846]
+texture = ExtResource("1_ebynj")

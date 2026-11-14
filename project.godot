@@ -15,6 +15,10 @@ run/main_scene="uid://bmdpcb4bq7g2a"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SpawnManager="*uid://b6jrka8styiui"
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -23,6 +27,7 @@ window/stretch/aspect="expand"
 [physics]
 
 3d/physics_engine="Jolt Physics"
+2d/default_gravity=900.0
 
 [rendering]
 

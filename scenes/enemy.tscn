@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cremjwkeoeldt"]
 
 [ext_resource type="Script" uid="uid://dqsu8fulbmwgf" path="res://scripts/enemy.gd" id="1_4ra3w"]
-[ext_resource type="Texture2D" uid="uid://dyq851o6wka3l" path="res://assets/mushroom/mushroom_walk_anim_strip_8.png" id="1_7p1mj"]
+[ext_resource type="Texture2D" uid="uid://dyq851o6wka3l" path="res://assets/characters/mushroom/mushroom_walk_anim_strip_8.png" id="1_7p1mj"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/killzone.tscn" id="3_5uy6h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
@@ -71,6 +71,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
 size = Vector2(10, 15)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
+size = Vector2(10, 1)
+
 [node name="Enemy" type="Node2D" unique_id=1545852921]
 script = ExtResource("1_4ra3w")
 
@@ -98,3 +101,11 @@ frame_progress = 0.48533392
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1512482582]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_4ra3w")
+
+[node name="JumpOn" type="Area2D" parent="." unique_id=1463262672]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOn" unique_id=525840000]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_8ksrx")
+
+[connection signal="body_entered" from="JumpOn" to="." method="_on_jump_on_body_entered"]

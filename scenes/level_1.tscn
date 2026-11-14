@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bswci"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_rus8k"]
-[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/killzone.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/enemy.tscn" id="3_rus8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_bswci")
@@ -125,8 +125,6 @@ texture = ExtResource("1_bswci")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_c7num")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
-
 [node name="Game" type="Node2D" unique_id=190928873]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2035739788]
@@ -137,9 +135,5 @@ layer_0/tile_data = PackedInt32Array(131071, 65536, 0, 65536, 65536, 0, 65537, 6
 [node name="Player" parent="." unique_id=397778607 instance=ExtResource("2_rus8k")]
 position = Vector2(23, 16)
 
-[node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("3_rus8k")]
-position = Vector2(187, -2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1360827302]
-position = Vector2(-2, 7)
-shape = SubResource("RectangleShape2D_8ksrx")
+[node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("3_rus8k")]
+position = Vector2(188, 8)

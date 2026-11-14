@@ -52,3 +52,5 @@ func die():
 	await animated_sprite.animation_finished
 	isDying = false
 	
+func jumpOn():
+	velocity.y -= 300

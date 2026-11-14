@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bmdpcb4bq7g2a"]
 
-[ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://REsurgence-THrow/assets/tileset.png" id="1_0rleu"]
-[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://REsurgence-THrow/scenes/player.tscn" id="2_c7num"]
+[ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tileset.png" id="1_0rleu"]
+[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_c7num"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_0rleu")
@@ -135,5 +135,6 @@ layer_0/tile_data = PackedInt32Array(65536, 0, 0, 131072, 0, 1, 196608, 0, 2, 65
 position = Vector2(23, 16)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=993789746]
+position = Vector2(-1, 0)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true

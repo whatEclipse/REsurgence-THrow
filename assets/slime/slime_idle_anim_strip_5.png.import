@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v7v7oai0v86a"
-path="res://.godot/imported/slime_idle_anim_strip_5.png-cb5a9869695743ae8eeab71b91a9cf05.ctex"
+path="res://.godot/imported/slime_idle_anim_strip_5.png-34ce8a4f2ba6a9ea4322ba5fd234fd7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://REsurgence-THrow/assets/slime/slime_idle_anim_strip_5.png"
-dest_files=["res://.godot/imported/slime_idle_anim_strip_5.png-cb5a9869695743ae8eeab71b91a9cf05.ctex"]
+source_file="res://assets/slime/slime_idle_anim_strip_5.png"
+dest_files=["res://.godot/imported/slime_idle_anim_strip_5.png-34ce8a4f2ba6a9ea4322ba5fd234fd7e.ctex"]
 
 [params]
 

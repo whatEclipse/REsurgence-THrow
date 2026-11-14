@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cu8x4bjt5lmc7"
-path="res://.godot/imported/slime_death_anim_strip_6.png-f70f470ae6b2b6a00d271228d13885ba.ctex"
+path="res://.godot/imported/slime_death_anim_strip_6.png-f07e42aeabd8add7df5a2153bbd51e99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://REsurgence-THrow/assets/slime/slime_death_anim_strip_6.png"
-dest_files=["res://.godot/imported/slime_death_anim_strip_6.png-f70f470ae6b2b6a00d271228d13885ba.ctex"]
+source_file="res://assets/slime/slime_death_anim_strip_6.png"
+dest_files=["res://.godot/imported/slime_death_anim_strip_6.png-f07e42aeabd8add7df5a2153bbd51e99.ctex"]
 
 [params]
 

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://kspr25ufuj05"]
 
 [ext_resource type="Texture2D" uid="uid://cu8x4bjt5lmc7" path="res://REsurgence-THrow/assets/slime/slime_death_anim_strip_6.png" id="1_il61v"]
+[ext_resource type="Script" uid="uid://drm4sjytc80f3" path="res://REsurgence-THrow/scripts/player.gd" id="1_mitmf"]
 [ext_resource type="Texture2D" uid="uid://bmvqdai5qfb5e" path="res://REsurgence-THrow/assets/slime/slime_hit_anim_strip_3.png" id="2_mitmf"]
 [ext_resource type="Texture2D" uid="uid://v7v7oai0v86a" path="res://REsurgence-THrow/assets/slime/slime_idle_anim_strip_5.png" id="3_xavkr"]
 [ext_resource type="Texture2D" uid="uid://csqcbwhd8kwwy" path="res://REsurgence-THrow/assets/slime/slime_walk_anim_strip_15.png" id="4_sesc4"]
@@ -235,6 +236,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=397778607]
+script = ExtResource("1_mitmf")
 
 [node name="Collision" type="CollisionShape2D" parent="." unique_id=449771243]
 position = Vector2(0, -5)
@@ -245,4 +247,4 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8ksrx")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.07591116
+frame_progress = 0.85947925

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdw73oasi4ovd"
-path="res://.godot/imported/mushroom_hit_anim_strip_3.png-aedef2c22ee3b1cb6bf8654aec1a8f9a.ctex"
+uid="uid://7l2p6sherhrv"
+path="res://.godot/imported/LavaAnimation_Bottom.png-386962109c3139a1be52cd5fca86eba5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mushroom/mushroom_hit_anim_strip_3.png"
-dest_files=["res://.godot/imported/mushroom_hit_anim_strip_3.png-aedef2c22ee3b1cb6bf8654aec1a8f9a.ctex"]
+source_file="res://assets/decorations/LavaAnimation_Bottom.png"
+dest_files=["res://.godot/imported/LavaAnimation_Bottom.png-386962109c3139a1be52cd5fca86eba5.ctex"]
 
 [params]
 

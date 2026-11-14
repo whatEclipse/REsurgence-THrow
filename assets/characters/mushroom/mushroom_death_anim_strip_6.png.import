@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu8x4bjt5lmc7"
-path="res://.godot/imported/slime_death_anim_strip_6.png-f07e42aeabd8add7df5a2153bbd51e99.ctex"
+uid="uid://c3vh1aaxf7ibi"
+path="res://.godot/imported/mushroom_death_anim_strip_6.png-f64baa49993bd964001ce36b29a29d00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime/slime_death_anim_strip_6.png"
-dest_files=["res://.godot/imported/slime_death_anim_strip_6.png-f07e42aeabd8add7df5a2153bbd51e99.ctex"]
+source_file="res://assets/characters/mushroom/mushroom_death_anim_strip_6.png"
+dest_files=["res://.godot/imported/mushroom_death_anim_strip_6.png-f64baa49993bd964001ce36b29a29d00.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmvqdai5qfb5e"
-path="res://.godot/imported/slime_hit_anim_strip_3.png-3dbfda77d4dfcb612aecba70cd8bfe74.ctex"
+uid="uid://dg3orruwc6lee"
+path="res://.godot/imported/slime_walk_anim_strip_15.png-76b3d12c33bfaf3e26ec2444d279f629.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime/slime_hit_anim_strip_3.png"
-dest_files=["res://.godot/imported/slime_hit_anim_strip_3.png-3dbfda77d4dfcb612aecba70cd8bfe74.ctex"]
+source_file="res://assets/characters/slime/slime_walk_anim_strip_15.png"
+dest_files=["res://.godot/imported/slime_walk_anim_strip_15.png-76b3d12c33bfaf3e26ec2444d279f629.ctex"]
 
 [params]
 

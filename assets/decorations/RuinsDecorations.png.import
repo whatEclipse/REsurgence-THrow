@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1b04wluy3gfx"
-path="res://.godot/imported/spawn_point.png-415fd1d11bf4fcc00ff7aedec22a7b7b.ctex"
+uid="uid://do5kmbhwbgs1t"
+path="res://.godot/imported/RuinsDecorations.png-bbb1f138d76f9d5e56a017eb31a80210.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spawn_point.png"
-dest_files=["res://.godot/imported/spawn_point.png-415fd1d11bf4fcc00ff7aedec22a7b7b.ctex"]
+source_file="res://assets/decorations/RuinsDecorations.png"
+dest_files=["res://.godot/imported/RuinsDecorations.png-bbb1f138d76f9d5e56a017eb31a80210.ctex"]
 
 [params]
 

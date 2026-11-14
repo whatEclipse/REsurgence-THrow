@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs6eqtq7epft0"
-path="res://.godot/imported/mushroom_crushed_anim_strip_6.png-5d12ff9ab49787c5e319aac4371b463d.ctex"
+uid="uid://bmvqdai5qfb5e"
+path="res://.godot/imported/slime_hit_anim_strip_3.png-aa74693ad3be8788e4392aee7f93ba95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mushroom/mushroom_crushed_anim_strip_6.png"
-dest_files=["res://.godot/imported/mushroom_crushed_anim_strip_6.png-5d12ff9ab49787c5e319aac4371b463d.ctex"]
+source_file="res://assets/characters/slime/slime_hit_anim_strip_3.png"
+dest_files=["res://.godot/imported/slime_hit_anim_strip_3.png-aa74693ad3be8788e4392aee7f93ba95.ctex"]
 
 [params]
 

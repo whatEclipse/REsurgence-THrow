@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg3orruwc6lee"
-path="res://.godot/imported/slime_walk_anim_strip_15.png-992157559e68f2a2b80d4aad171afe78.ctex"
+uid="uid://vgl6v7u48wiy"
+path="res://.godot/imported/LavaFallAnimation.png-cad0b200e3e70b3960c3c4fe7af8a600.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime/slime_walk_anim_strip_15.png"
-dest_files=["res://.godot/imported/slime_walk_anim_strip_15.png-992157559e68f2a2b80d4aad171afe78.ctex"]
+source_file="res://assets/decorations/LavaFallAnimation.png"
+dest_files=["res://.godot/imported/LavaFallAnimation.png-cad0b200e3e70b3960c3c4fe7af8a600.ctex"]
 
 [params]
 

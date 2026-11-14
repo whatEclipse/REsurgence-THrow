@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyq851o6wka3l"
-path="res://.godot/imported/mushroom_walk_anim_strip_8.png-0a19453e212c4cf25f21124c7bdcde55.ctex"
+uid="uid://jjkxdy168w2x"
+path="res://.godot/imported/Lava_tileset.png-0188efb0bbf4cebb8f3099af85d22bbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mushroom/mushroom_walk_anim_strip_8.png"
-dest_files=["res://.godot/imported/mushroom_walk_anim_strip_8.png-0a19453e212c4cf25f21124c7bdcde55.ctex"]
+source_file="res://assets/tilemap/Lava_tileset.png"
+dest_files=["res://.godot/imported/Lava_tileset.png-0188efb0bbf4cebb8f3099af85d22bbc.ctex"]
 
 [params]
 

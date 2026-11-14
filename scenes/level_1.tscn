@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xme5l6xdbvqy"]
 
-[ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tileset.png" id="1_bswci"]
+[ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bswci"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/killzone.tscn" id="3_rus8k"]
 

@@ -25,6 +25,10 @@ MusicManager="*uid://cdugw1rtwrd00"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[global_group]
+
+player=""
+
 [input]
 
 left={

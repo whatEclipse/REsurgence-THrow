@@ -18,15 +18,12 @@ config/icon="res://icon.svg"
 [autoload]
 
 SpawnManager="*uid://b6jrka8styiui"
+MusicManager="*uid://cdugw1rtwrd00"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[global_group]
-
-Killzone=""
 
 [input]
 

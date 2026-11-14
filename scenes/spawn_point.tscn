@@ -12,8 +12,8 @@ script = ExtResource("1_c3ytd")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=122332846]
 texture = ExtResource("1_ebynj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1834039832]
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1182029718]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1834039832]
 position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_m6kdp")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1182029718]

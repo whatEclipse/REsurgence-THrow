@@ -1,8 +1,19 @@
 [gd_scene format=3 uid="uid://dr08pijwig0ao"]
 
+[ext_resource type="Script" uid="uid://byqnbvnxrbkta" path="res://scripts/spawn_point.gd" id="1_c3ytd"]
 [ext_resource type="Texture2D" uid="uid://b1b04wluy3gfx" path="res://assets/spawn_point.png" id="1_ebynj"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m6kdp"]
+size = Vector2(13, 15)
+
 [node name="SpawnPoint" type="Node2D" unique_id=1508777403]
+script = ExtResource("1_c3ytd")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=122332846]
 texture = ExtResource("1_ebynj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1834039832]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_m6kdp")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1182029718]

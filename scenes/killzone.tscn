@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bues4n1ohyg7a"]
+
+[node name="Killzone" type="Area2D" unique_id=2069752206 groups=["Killzone"]]

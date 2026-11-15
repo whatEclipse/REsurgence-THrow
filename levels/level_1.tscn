@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://xme5l6xdbvqy"]
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bswci"]
-[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="2_rus8k"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_rus8k"]
-[ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="4_kx6l7"]
+[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/enemy.tscn" id="3_rus8k"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rus8k"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_bswci")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -124,7 +123,7 @@ texture = ExtResource("1_bswci")
 
 [sub_resource type="TileSet" id="TileSet_8ksrx"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_rus8k")
+sources/0 = SubResource("TileSetAtlasSource_c7num")
 
 [node name="Game" type="Node2D" unique_id=190928873]
 
@@ -139,4 +138,5 @@ position = Vector2(23, 16)
 [node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("3_rus8k")]
 position = Vector2(188, 8)
 
-[node name="Game" parent="." unique_id=818478358 instance=ExtResource("4_kx6l7")]
+[node name="Enemy2" parent="." unique_id=1079830942 instance=ExtResource("3_rus8k")]
+position = Vector2(740.9204, 8.425629)

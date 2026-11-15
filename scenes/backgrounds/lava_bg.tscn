@@ -11,10 +11,12 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1948233419]
+z_index = -2
 layout_mode = 1
 offset_left = -159.0
 offset_top = -94.0
 offset_right = 161.0
 offset_bottom = 98.0
 texture = ExtResource("1_my37j")
+expand_mode = 1
 stretch_mode = 1

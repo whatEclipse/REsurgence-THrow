@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://xme5l6xdbvqy"]
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bswci"]
-[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_rus8k"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/enemy.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="4_kx6l7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_bswci")
@@ -125,6 +126,8 @@ texture = ExtResource("1_bswci")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_c7num")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8ksrx"]
+
 [node name="Game" type="Node2D" unique_id=190928873]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2035739788]
@@ -135,8 +138,22 @@ layer_0/tile_data = PackedInt32Array(131071, 65536, 0, 65536, 65536, 0, 65537, 6
 [node name="Player" parent="." unique_id=397778607 instance=ExtResource("2_rus8k")]
 position = Vector2(23, 16)
 
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=477611873]
+position = Vector2(-24, -16)
+zoom = Vector2(4, 4)
+process_callback = 0
+limit_left = -216
+limit_bottom = 300
+position_smoothing_enabled = true
+
 [node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("3_rus8k")]
 position = Vector2(188, 8)
 
 [node name="Enemy2" parent="." unique_id=1079830942 instance=ExtResource("3_rus8k")]
 position = Vector2(740.9204, 8.425629)
+
+[node name="WorldBorder" parent="." unique_id=2069752206 instance=ExtResource("4_kx6l7")]
+position = Vector2(628, 352)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorder" unique_id=19658427]
+shape = SubResource("WorldBoundaryShape2D_8ksrx")

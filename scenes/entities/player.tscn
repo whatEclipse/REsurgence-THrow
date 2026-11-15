@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://kspr25ufuj05"]
 
 [ext_resource type="Texture2D" uid="uid://cu8x4bjt5lmc7" path="res://assets/characters/slime/slime_death_anim_strip_6.png" id="1_il61v"]
-[ext_resource type="Script" uid="uid://drm4sjytc80f3" path="res://scripts/player.gd" id="1_mitmf"]
+[ext_resource type="Script" uid="uid://drm4sjytc80f3" path="res://scripts/entities/player.gd" id="1_mitmf"]
 [ext_resource type="Texture2D" uid="uid://bmvqdai5qfb5e" path="res://assets/characters/slime/slime_hit_anim_strip_3.png" id="2_mitmf"]
 [ext_resource type="Texture2D" uid="uid://v7v7oai0v86a" path="res://assets/characters/slime/slime_idle_anim_strip_5.png" id="3_xavkr"]
 [ext_resource type="Texture2D" uid="uid://dg3orruwc6lee" path="res://assets/characters/slime/slime_walk_anim_strip_15.png" id="4_sesc4"]

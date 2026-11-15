@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://xme5l6xdbvqy"]
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bswci"]
-[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_rus8k"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/enemy.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="4_kx6l7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
 texture = ExtResource("1_bswci")
@@ -137,3 +138,5 @@ position = Vector2(23, 16)
 
 [node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("3_rus8k")]
 position = Vector2(188, 8)
+
+[node name="Game" parent="." unique_id=818478358 instance=ExtResource("4_kx6l7")]

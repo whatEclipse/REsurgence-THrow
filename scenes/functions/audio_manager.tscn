@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cdugw1rtwrd00"]
+
+[ext_resource type="AudioStream" uid="uid://bmb12mvqopqva" path="res://audio/music/Sweet 70s.wav" id="1_tn5dr"]
+[ext_resource type="Script" uid="uid://8d1bgfaok0w1" path="res://scripts/functions/audio_manager.gd" id="2_jib05"]
+
+[node name="MusicManager" type="AudioStreamPlayer" unique_id=831728325]
+process_mode = 3
+stream = ExtResource("1_tn5dr")
+volume_db = -10.0
+autoplay = true
+script = ExtResource("2_jib05")

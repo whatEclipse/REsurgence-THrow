@@ -18,7 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 SpawnManager="*uid://b6jrka8styiui"
-MusicManager="*uid://cdugw1rtwrd00"
+AudioManager="*uid://cdugw1rtwrd00"
+GameData="*uid://cnhlpcgk1x5i1"
 
 [display]
 

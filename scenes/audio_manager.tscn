@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://cdugw1rtwrd00"]
-
-[ext_resource type="AudioStream" uid="uid://bmb12mvqopqva" path="res://audio/music/Clement Panchout - Sweet 70s.wav" id="1_tn5dr"]
-
-[node name="MusicManager" type="AudioStreamPlayer" unique_id=831728325]
-stream = ExtResource("1_tn5dr")
-volume_db = 5.405

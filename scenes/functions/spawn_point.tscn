@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dr08pijwig0ao"]
 
-[ext_resource type="Script" uid="uid://byqnbvnxrbkta" path="res://scripts/spawn_point.gd" id="1_c3ytd"]
+[ext_resource type="Script" uid="uid://byqnbvnxrbkta" path="res://scripts/scene/spawn_point.gd" id="1_c3ytd"]
 [ext_resource type="Texture2D" uid="uid://b1b04wluy3gfx" path="res://assets/collectibles/spawn_point.png" id="1_ebynj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m6kdp"]

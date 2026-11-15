@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1b04wluy3gfx"
-path="res://.godot/imported/spawn_point.png-89df998287f36a5c9670512a09a7df9e.ctex"
+uid="uid://cn5v83ix5qtlj"
+path="res://.godot/imported/spawnpoint.png-4c8614e0bb2ae4e89d98789a235b1e33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/collectibles/spawn_point.png"
-dest_files=["res://.godot/imported/spawn_point.png-89df998287f36a5c9670512a09a7df9e.ctex"]
+source_file="res://assets/collectibles/spawnpoint.png"
+dest_files=["res://.godot/imported/spawnpoint.png-4c8614e0bb2ae4e89d98789a235b1e33.ctex"]
 
 [params]
 

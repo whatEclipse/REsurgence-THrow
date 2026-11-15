@@ -196,6 +196,7 @@ offset_top = -403.0
 offset_right = -200.0
 offset_bottom = -403.0
 scale = Vector2(2.2134047, 2.2134047)
+mouse_filter = 1
 
 [node name="Spikes4" parent="." unique_id=508024324 instance=ExtResource("4_lfnxh")]
 position = Vector2(96, -200)

@@ -19,11 +19,11 @@ func open() -> void:
 	else:
 		quit_button.grab_focus()
 
-
 func _on_next_pressed() -> void:
+	SFXManager.stop_win()
 	GameData.play_next_level()
-
 
 func _on_quit_pressed() -> void:
 	get_tree().paused = false
 	get_tree().quit()
+	SFXManager.stop_win()

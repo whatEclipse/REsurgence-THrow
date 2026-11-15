@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://e1r20cqq8yb"]
 
-[node name="SfxManager" type="AudioStreamPlayer" unique_id=965917003]
+[ext_resource type="Script" uid="uid://kaimeafheoct" path="res://scripts/functions/sfx_manager.gd" id="1_i7da6"]
+[ext_resource type="AudioStream" uid="uid://dvardhicjd3dq" path="res://audio/sfx/whoosh-sfx.mp3" id="2_om8v1"]
+[ext_resource type="AudioStream" uid="uid://cxntgcqbaf0yn" path="res://audio/sfx/-win-sfx.mp3" id="4_tgpsu"]
+
+[node name="SFXManager" type="AudioStreamPlayer" unique_id=965917003]
+volume_db = -7.229
+script = ExtResource("1_i7da6")
+launch_sound = ExtResource("2_om8v1")
+launch_volume_db = -20.0
+death_volume_db = -3.0
+win_sound = ExtResource("4_tgpsu")
+win_volume_db = -2.0

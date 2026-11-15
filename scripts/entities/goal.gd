@@ -13,4 +13,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if _triggered or not body.is_in_group("player"):
 		return
 	_triggered = true
+	SFXManager.play_win()
 	victory_menu.open()

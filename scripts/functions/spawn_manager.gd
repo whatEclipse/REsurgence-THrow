@@ -12,6 +12,7 @@ var _charge_time := 0.0
 
 
 func _process(delta: float) -> void:
+	
 	if _charging:
 		_charge_time = minf(_charge_time + delta, MAX_CHARGE_TIME)
 
@@ -53,10 +54,12 @@ func _launch_flag() -> void:
 	current_flag = flag
 	scene.add_child(current_flag)
 	current_flag.global_position = player.global_position + Vector2(0, -8)
+	current_flag.add_collision_exception_with(player)
 
 	var charge := _charge_time / MAX_CHARGE_TIME
 	var speed := lerpf(MIN_SPEED, MAX_SPEED, charge)
 	current_flag.linear_velocity = to_mouse.normalized() * speed
+	SFXManager.play_launch()
 
 func respawn_player() -> bool:
 	if not is_instance_valid(current_flag):

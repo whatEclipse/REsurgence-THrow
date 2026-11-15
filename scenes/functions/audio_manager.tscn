@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cdugw1rtwrd00"]
 
 [ext_resource type="Script" uid="uid://8d1bgfaok0w1" path="res://scripts/functions/audio_manager.gd" id="2_jib05"]
-[ext_resource type="AudioStream" uid="uid://bfik5md8c7nj8" path="res://audio/music/The Chillout Factory.wav" id="4_keioa"]
+[ext_resource type="AudioStream" uid="uid://02nls4edviw2" path="res://audio/music/Level_1-5.wav" id="3_bfv0g"]
 [ext_resource type="AudioStream" uid="uid://dits1ay0uimbd" path="res://audio/music/HipHop.wav" id="5_s743g"]
 
 [node name="AudioManager" type="AudioStreamPlayer" unique_id=831728325]
@@ -9,5 +9,4 @@ process_mode = 3
 volume_db = -10.0
 script = ExtResource("2_jib05")
 menu_music = ExtResource("5_s743g")
-early_levels_music = ExtResource("5_s743g")
-late_levels_music = ExtResource("4_keioa")
+early_levels_music = ExtResource("3_bfv0g")

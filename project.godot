@@ -17,15 +17,19 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SpawnManager="*uid://b6jrka8styiui"
 AudioManager="*uid://cdugw1rtwrd00"
+SFXManager="*uid://e1r20cqq8yb"
+SpawnManager="*uid://b6jrka8styiui"
 GameData="*uid://cnhlpcgk1x5i1"
-Sfxmanager="*uid://dlmc64vm77eqs"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [global_group]
 

@@ -62,6 +62,7 @@ func _track_for_scene(path: String) -> AudioStream:
 
 
 func _play_track(track: AudioStream) -> void:
+	_music_player.stream_paused = false
 	if track == _current_track:
 		return 
 	_current_track = track
@@ -74,6 +75,8 @@ func _play_track(track: AudioStream) -> void:
 	_tween.tween_callback(_switch_stream.bind(track))
 	_tween.tween_property(_music_player, "volume_db", 0.0, FADE_TIME)
 
+func set_music_paused(paused: bool) -> void:
+	_music_player.stream_paused = paused
 
 func _switch_stream(track: AudioStream) -> void:
 	if track == null:

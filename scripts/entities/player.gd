@@ -49,6 +49,7 @@ func die():
 	if isDying:
 		return
 	isDying = true
+	SFXManager.play_death()
 	animated_sprite.play("Death")
 	await animated_sprite.animation_finished
 	velocity = Vector2.ZERO

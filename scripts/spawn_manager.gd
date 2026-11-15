@@ -34,7 +34,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 		current_flag = flag
 		scene.add_child(current_flag)
-		current_flag.global_position = player.global_position
+		current_flag.global_position = player.global_position + Vector2(0, -8)
 
 		var to_mouse := player.get_global_mouse_position() - player.global_position
 		var speed := clampf(to_mouse.length() * SPEED_PER_PIXEL, MIN_SPEED, MAX_SPEED)

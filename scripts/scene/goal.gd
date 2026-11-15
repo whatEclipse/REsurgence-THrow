@@ -10,7 +10,6 @@ func _ready() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	SFXManager.play_win()
 	if _triggered or not body.is_in_group("player"):
 		return
 	_triggered = true

@@ -46,7 +46,6 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 	
 func die():
-	SFXManager.play_death()
 	if isDying:
 		return
 	isDying = true

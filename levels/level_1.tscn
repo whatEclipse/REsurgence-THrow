@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="4_kx6l7"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7num"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rus8k"]
 texture = ExtResource("1_bswci")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -124,10 +124,9 @@ texture = ExtResource("1_bswci")
 
 [sub_resource type="TileSet" id="TileSet_8ksrx"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_c7num")
+sources/0 = SubResource("TileSetAtlasSource_rus8k")
 
 [node name="Game" type="Node2D" unique_id=190928873]
-position = Vector2(214.07959, -37.42563)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2035739788]
 tile_set = SubResource("TileSet_8ksrx")

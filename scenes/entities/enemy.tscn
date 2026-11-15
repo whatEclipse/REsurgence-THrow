@@ -84,10 +84,10 @@ target_position = Vector2(-9, 0)
 target_position = Vector2(9, 0)
 
 [node name="RayCastBottomR" type="RayCast2D" parent="." unique_id=1833343127]
-target_position = Vector2(11, 10)
+target_position = Vector2(10, 9)
 
 [node name="RayCastBottomL" type="RayCast2D" parent="." unique_id=130235764]
-target_position = Vector2(-11, 10)
+target_position = Vector2(-10, 9)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=39893068]
 sprite_frames = SubResource("SpriteFrames_flrxc")

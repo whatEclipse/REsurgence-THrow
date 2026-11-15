@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://e1r20cqq8yb"]
+
+[node name="SfxManager" type="AudioStreamPlayer" unique_id=965917003]

@@ -48,6 +48,7 @@ func _launch_flag() -> void:
 		push_error("spawn_point.tscn root is not a RigidBody2D")
 		flag.queue_free()
 		return
+	SFXManager.play_launch()
 
 	current_flag = flag
 	scene.add_child(current_flag)

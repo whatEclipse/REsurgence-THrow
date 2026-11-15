@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dab7s54e2e3rb" path="res://assets/background/Forest/Forest Layer 04.png" id="5_d4ub7"]
 
 [node name="Forest BG" type="Control" unique_id=883687545]
+texture_repeat = 2
 layout_mode = 3
 anchors_preset = 0
 

@@ -309,9 +309,3 @@ collision_layer = 2
 [node name="CollisionBox" type="CollisionShape2D" parent="Hitbox" unique_id=758696748]
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_flrxc")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=193902190]
-position = Vector2(-1, 0)
-zoom = Vector2(4, 4)
-process_callback = 0
-position_smoothing_enabled = true

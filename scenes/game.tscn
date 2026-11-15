@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bmdpcb4bq7g2a"]
+[gd_scene format=3 uid="uid://nucw1hahh0yk"]
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_0rleu"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/player.tscn" id="2_c7num"]

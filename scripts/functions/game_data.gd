@@ -34,3 +34,19 @@ func play_level(level: int) -> void:
 	save_data()
 	get_tree().paused = false
 	get_tree().change_scene_to_file(path)
+func get_current_level() -> int:
+	var scene := get_tree().current_scene
+	if scene != null:
+		var regex := RegEx.create_from_string("level_(\\d+)\\.tscn$")
+		var result := regex.search(scene.scene_file_path)
+		if result:
+			return int(result.get_string(1))
+	return last_level
+
+
+func has_next_level() -> bool:
+	return get_current_level() < LEVEL_COUNT
+
+
+func play_next_level() -> void:
+	play_level(get_current_level() + 1)

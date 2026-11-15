@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dnd66ee0n7o3a"]
+
+[ext_resource type="Script" uid="uid://dbvs6h02j84pk" path="res://scripts/scene/win_menu.gd" id="1_h5r23"]
+[ext_resource type="FontFile" uid="uid://b5ldf0s6td3lu" path="res://assets/fonts/PixeloidSans-Bold.ttf" id="2_meh88"]
+[ext_resource type="FontFile" uid="uid://dot1npmuil1ll" path="res://assets/fonts/PixeloidMono.ttf" id="3_npby5"]
+[ext_resource type="FontFile" uid="uid://cddvw5hbg2ife" path="res://assets/fonts/ka1.ttf" id="4_iexr3"]
+
+[node name="Game" type="CanvasLayer" unique_id=818478358]
+process_mode = 3
+script = ExtResource("1_h5r23")
+
+[node name="Control" type="Control" parent="." unique_id=1468692879]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Control" unique_id=1830257704]
+z_index = 2
+layout_mode = 0
+offset_left = -98.0
+offset_top = 59.0
+offset_right = 1226.0
+offset_bottom = 769.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer" unique_id=671279564]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="NextLevelButton" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=1213070887]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_meh88")
+theme_override_font_sizes/font_size = 50
+text = "Continue!
+"
+
+[node name="QuitButton" type="Button" parent="Control/CenterContainer/VBoxContainer" unique_id=818617591]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_npby5")
+theme_override_font_sizes/font_size = 40
+text = "Quit"
+
+[node name="TitleBar" type="Label" parent="Control" unique_id=1033750818]
+z_index = 10
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 40.0
+offset_top = 101.0
+offset_right = 1103.0
+offset_bottom = 199.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_iexr3")
+theme_override_font_sizes/font_size = 73
+text = "REsurgence THrow"
+horizontal_alignment = 1
+
+[node name="Dimmer" type="ColorRect" parent="Control" unique_id=1146349705]
+layout_mode = 1
+anchors_preset = -1
+offset_left = -134.0
+offset_top = -156.0
+offset_right = 1337.0
+offset_bottom = 752.0
+mouse_filter = 2
+color = Color(0.012617188, 0.012617188, 0.012617188, 0.15686275)

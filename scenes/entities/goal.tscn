@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b85mbrl31enfv"]
+
+[ext_resource type="Script" uid="uid://cbaks2mj4camk" path="res://scripts/scene/goal.gd" id="1_tpphk"]
+[ext_resource type="Texture2D" uid="uid://bu3qxi4xvgauf" path="res://assets/decorations/goal.png" id="2_2sfoj"]
+[ext_resource type="PackedScene" uid="uid://dnd66ee0n7o3a" path="res://scenes/menus/win_menu.tscn" id="2_8oewu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sfoj"]
+size = Vector2(20, 42)
+
+[node name="Goal" type="Area2D" unique_id=731644249]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_tpphk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1217610145]
+texture = ExtResource("2_2sfoj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070658722]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_2sfoj")
+
+[node name="VictoryMenu" parent="." unique_id=818478358 instance=ExtResource("2_8oewu")]

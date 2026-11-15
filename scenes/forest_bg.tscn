@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cppl13vbl5a10"]
+
+[ext_resource type="Texture2D" uid="uid://o5i0t8nadjd8" path="res://assets/background/Forest/Forest Layer 05.png" id="1_nhwhw"]
+[ext_resource type="Texture2D" uid="uid://dd5cxhngdytft" path="res://assets/background/Forest/Forest Layer 01.png" id="2_8pna0"]
+[ext_resource type="Texture2D" uid="uid://bnpoxafclti5a" path="res://assets/background/Forest/Forest Layer 02.png" id="3_oi83w"]
+[ext_resource type="Texture2D" uid="uid://bwb2abc2tb11n" path="res://assets/background/Forest/Forest Layer 03.png" id="4_favds"]
+[ext_resource type="Texture2D" uid="uid://dab7s54e2e3rb" path="res://assets/background/Forest/Forest Layer 04.png" id="5_d4ub7"]
+
+[node name="Forest BG" type="Node" unique_id=688408595]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=205925458]
+offset_right = 512.0
+offset_bottom = 256.0
+texture = ExtResource("1_nhwhw")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=524032701]
+offset_right = 512.0
+offset_bottom = 256.0
+texture = ExtResource("2_8pna0")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1431703950]
+offset_right = 512.0
+offset_bottom = 256.0
+texture = ExtResource("3_oi83w")
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=2092253143]
+offset_right = 512.0
+offset_bottom = 256.0
+texture = ExtResource("4_favds")
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=1635263132]
+offset_right = 512.0
+offset_bottom = 256.0
+texture = ExtResource("5_d4ub7")

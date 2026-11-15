@@ -7,7 +7,6 @@
 
 [node name="Game" type="CanvasLayer" unique_id=818478358]
 process_mode = 3
-visible = false
 script = ExtResource("1_h5r23")
 
 [node name="Control" type="Control" parent="." unique_id=1468692879]

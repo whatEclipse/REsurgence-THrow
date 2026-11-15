@@ -1,6 +1,6 @@
 extends Node
 
-const LEVEL_COUNT := 10 
+const LEVEL_COUNT := 5 
 const LEVEL_PATH := "res://levels/level_%d.tscn"
 const MAIN_MENU_PATH := "res://scenes/menus/main_menu.tscn"
 const LEVEL_SELECT_PATH := "res://scenes/menus/level_select.tscn"

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cej45xlk526h1"]
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_qskt5"]
+[ext_resource type="PackedScene" uid="uid://dnd66ee0n7o3a" path="res://scenes/menus/win_menu.tscn" id="1_v2dqh"]
 [ext_resource type="Texture2D" uid="uid://jjkxdy168w2x" path="res://assets/tilemap/Lava_tileset.png" id="2_8tsbn"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="3_rqsg2"]
 [ext_resource type="PackedScene" uid="uid://bxjn11bv610mo" path="res://scenes/entities/spikes.tscn" id="4_fpvgn"]
@@ -8,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b30xmi50drdro" path="res://scenes/entities/coin.tscn" id="6_fpvgn"]
 [ext_resource type="PackedScene" uid="uid://dbrg26dcbv0hg" path="res://scenes/backgrounds/lava_bg.tscn" id="7_fpvgn"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="8_xn6mk"]
+[ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="10_nu44e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("1_qskt5")
@@ -285,6 +287,8 @@ sources/1 = SubResource("TileSetAtlasSource_ak5vt")
 
 [node name="Level 6" type="Node2D" unique_id=1319758042]
 
+[node name="Game2" parent="." unique_id=818478358 instance=ExtResource("1_v2dqh")]
+
 [node name="TileMap" type="TileMap" parent="." unique_id=95588857]
 tile_set = SubResource("TileSet_ij176")
 format = 2
@@ -293,7 +297,7 @@ layer_0/tile_data = PackedInt32Array(131070, 1, 0, 131071, 65537, 0, 65536, 6553
 [node name="Player" parent="." unique_id=397778607 instance=ExtResource("3_rqsg2")]
 position = Vector2(54, 16)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1202572481]
+[node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1202572481]
 position = Vector2(-24, -16)
 zoom = Vector2(4, 4)
 process_callback = 0
@@ -357,3 +361,5 @@ position = Vector2(636, 161)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBorder" unique_id=845569827]
 shape = SubResource("WorldBoundaryShape2D_3t5n2")
+
+[node name="Game" parent="." unique_id=995799063 instance=ExtResource("10_nu44e")]

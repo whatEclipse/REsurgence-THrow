@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_e224s"]
 [ext_resource type="Texture2D" uid="uid://jjkxdy168w2x" path="res://assets/tilemap/Lava_tileset.png" id="2_wcwf6"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="3_e224s"]
+[ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="4_r02ll"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("1_e224s")
@@ -288,3 +289,5 @@ layer_0/tile_data = PackedInt32Array(131070, 1, 0, 131071, 65537, 0, 65536, 6553
 
 [node name="Player" parent="." unique_id=397778607 instance=ExtResource("3_e224s")]
 position = Vector2(54, 16)
+
+[node name="Game" parent="." unique_id=818478358 instance=ExtResource("4_r02ll")]

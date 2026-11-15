@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="REsurgance THrow"
-run/main_scene="uid://bmdpcb4bq7g2a"
+run/main_scene="uid://725ml7ymhxwg"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

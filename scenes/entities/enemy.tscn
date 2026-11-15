@@ -69,7 +69,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
-size = Vector2(10, 15)
+size = Vector2(10, 14)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
 size = Vector2(10, 1)
@@ -99,10 +99,12 @@ frame_progress = 0.48533392
 [node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("3_5uy6h")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1512482582]
-position = Vector2(0, 0.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_4ra3w")
 
 [node name="JumpOn" type="Area2D" parent="." unique_id=1463262672]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOn" unique_id=525840000]
 position = Vector2(0, -7.5)

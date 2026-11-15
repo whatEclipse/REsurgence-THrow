@@ -172,10 +172,10 @@ position = Vector2(-484, -219)
 shape = SubResource("WorldBoundaryShape2D_8ksrx")
 
 [node name="Forest BG" parent="." unique_id=883687545 instance=ExtResource("4_v5uil")]
-offset_left = -26.0
-offset_top = -446.0
-offset_right = -26.0
-offset_bottom = -446.0
+offset_left = -169.0
+offset_top = -422.0
+offset_right = -169.0
+offset_bottom = -422.0
 scale = Vector2(2, 2)
 mouse_filter = 1
 

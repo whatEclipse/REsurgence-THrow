@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://blc6crh0dw2j1"]
+
+[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="1_r1c77"]
+[ext_resource type="Texture2D" uid="uid://vgl6v7u48wiy" path="res://assets/decorations/LavaFallAnimation.png" id="2_2srur"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
+size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqwdt"]
+atlas = ExtResource("2_2srur")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yq8vc"]
+atlas = ExtResource("2_2srur")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3ft0"]
+atlas = ExtResource("2_2srur")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvval"]
+atlas = ExtResource("2_2srur")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3dsv"]
+atlas = ExtResource("2_2srur")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4esco"]
+atlas = ExtResource("2_2srur")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oilw8"]
+atlas = ExtResource("2_2srur")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suyvm"]
+atlas = ExtResource("2_2srur")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ksrx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqwdt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yq8vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3ft0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvval")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3dsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4esco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oilw8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suyvm")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Lava Flow" type="Node2D" unique_id=446581881]
+
+[node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("1_r1c77")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=457510958]
+shape = SubResource("RectangleShape2D_8ksrx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=930953407]
+sprite_frames = SubResource("SpriteFrames_8ksrx")
+autoplay = "default"
+frame_progress = 0.05229673

@@ -6,29 +6,51 @@
 [ext_resource type="Texture2D" uid="uid://bwb2abc2tb11n" path="res://assets/background/Forest/Forest Layer 03.png" id="4_favds"]
 [ext_resource type="Texture2D" uid="uid://dab7s54e2e3rb" path="res://assets/background/Forest/Forest Layer 04.png" id="5_d4ub7"]
 
-[node name="Forest BG" type="Node" unique_id=688408595]
+[node name="Forest BG" type="Control" unique_id=883687545]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=205925458]
+z_index = -2
+layout_mode = 0
 offset_right = 512.0
 offset_bottom = 256.0
 texture = ExtResource("1_nhwhw")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=524032701]
+z_index = -2
+layout_mode = 0
 offset_right = 512.0
 offset_bottom = 256.0
 texture = ExtResource("2_8pna0")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect3" type="TextureRect" parent="." unique_id=1431703950]
+z_index = -2
+layout_mode = 0
 offset_right = 512.0
 offset_bottom = 256.0
 texture = ExtResource("3_oi83w")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect4" type="TextureRect" parent="." unique_id=2092253143]
+z_index = -2
+layout_mode = 0
 offset_right = 512.0
 offset_bottom = 256.0
 texture = ExtResource("4_favds")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect5" type="TextureRect" parent="." unique_id=1635263132]
+z_index = -2
+layout_mode = 0
 offset_right = 512.0
 offset_bottom = 256.0
 texture = ExtResource("5_d4ub7")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true

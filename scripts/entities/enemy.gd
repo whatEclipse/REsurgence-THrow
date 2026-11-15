@@ -1,5 +1,5 @@
 extends Node2D
-var SPEED = 60
+var SPEED = 50
 
 var direction = 1
 

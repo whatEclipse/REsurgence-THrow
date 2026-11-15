@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-const SETTLE_SPEED := 3.0   
+const SETTLE_SPEED := 8.0   
 const SETTLE_TIME := 0.3    
 
 var _slow_time := 0.0

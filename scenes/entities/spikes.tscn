@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://bxjn11bv610mo"]
 
 [ext_resource type="Texture2D" uid="uid://beibchlj8c544" path="res://assets/decorations/miscellaneous sprites/spikes.png" id="1_xbcdo"]
-[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/killzone.tscn" id="2_bflj7"]
+[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="2_bflj7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
 size = Vector2(14, 14)
 
 [node name="Spikes" type="Node2D" unique_id=1115962648]
+z_index = -1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1635500137]
 texture = ExtResource("1_xbcdo")

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dnd66ee0n7o3a" path="res://scenes/menus/win_menu.tscn" id="2_8oewu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2sfoj"]
-size = Vector2(20, 42)
+size = Vector2(20, 32)
 
 [node name="Goal" type="Area2D" unique_id=731644249]
 collision_layer = 2
@@ -16,7 +16,7 @@ script = ExtResource("1_tpphk")
 texture = ExtResource("2_2sfoj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2070658722]
-position = Vector2(0, -13)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_2sfoj")
 
 [node name="VictoryMenu" parent="." unique_id=818478358 instance=ExtResource("2_8oewu")]

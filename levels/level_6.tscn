@@ -4,13 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://jjkxdy168w2x" path="res://assets/tilemap/Lava_tileset.png" id="2_8tsbn"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="3_rqsg2"]
 [ext_resource type="PackedScene" uid="uid://bxjn11bv610mo" path="res://scenes/entities/spikes.tscn" id="4_fpvgn"]
-[ext_resource type="PackedScene" uid="uid://blc6crh0dw2j1" path="res://scenes/backgrounds/lava_flow.tscn" id="5_rqsg2"]
+[ext_resource type="PackedScene" uid="uid://blc6crh0dw2j1" path="res://scenes/functions/lava_flow.tscn" id="5_rqsg2"]
 [ext_resource type="PackedScene" uid="uid://b30xmi50drdro" path="res://scenes/entities/coin.tscn" id="6_fpvgn"]
 [ext_resource type="PackedScene" uid="uid://dbrg26dcbv0hg" path="res://scenes/backgrounds/lava_bg.tscn" id="7_fpvgn"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="8_xn6mk"]
 [ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="9_nu44e"]
 [ext_resource type="PackedScene" uid="uid://dnd66ee0n7o3a" path="res://scenes/menus/win_menu.tscn" id="10_kx1xp"]
 [ext_resource type="PackedScene" uid="uid://b85mbrl31enfv" path="res://scenes/entities/goal.tscn" id="11_m516p"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="12_kx1xp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("1_qskt5")
@@ -356,18 +357,22 @@ position = Vector2(121, -23)
 [node name="Coin2" parent="Coins" unique_id=2096102621 instance=ExtResource("6_fpvgn")]
 position = Vector2(857, -72)
 
-[node name="Spikes" type="Node" parent="." unique_id=22156749]
+[node name="Killzones" type="Node" parent="." unique_id=22156749]
 
-[node name="Spikes" parent="Spikes" unique_id=1115962648 instance=ExtResource("4_fpvgn")]
+[node name="Spikes" parent="Killzones" unique_id=1115962648 instance=ExtResource("4_fpvgn")]
 position = Vector2(151, 8)
 rotation = -3.1415925
 
-[node name="Spikes2" parent="Spikes" unique_id=1779854257 instance=ExtResource("4_fpvgn")]
+[node name="Spikes2" parent="Killzones" unique_id=1779854257 instance=ExtResource("4_fpvgn")]
 position = Vector2(167, 8)
 rotation = -3.1415925
 
-[node name="Spikes3" parent="Spikes" unique_id=1298290647 instance=ExtResource("4_fpvgn")]
+[node name="Spikes3" parent="Killzones" unique_id=1298290647 instance=ExtResource("4_fpvgn")]
 position = Vector2(183, 8)
+rotation = -3.1415925
+
+[node name="Spikes4" parent="Killzones" unique_id=1741556725 instance=ExtResource("4_fpvgn")]
+position = Vector2(790, 9)
 rotation = -3.1415925
 
 [node name="Lava Flow" parent="." unique_id=1040812441 instance=ExtResource("5_rqsg2")]
@@ -380,12 +385,12 @@ position = Vector2(712, -103)
 position = Vector2(712, -119)
 
 [node name="Game" parent="." unique_id=818478358 instance=ExtResource("9_nu44e")]
+visible = false
 
 [node name="Game2" parent="." unique_id=1227357694 instance=ExtResource("10_kx1xp")]
 
 [node name="Goal" parent="." unique_id=731644249 instance=ExtResource("11_m516p")]
 position = Vector2(936, -24)
 
-[node name="Spikes2" parent="." unique_id=1741556725 instance=ExtResource("4_fpvgn")]
-position = Vector2(790, 9)
-rotation = 3.1415927
+[node name="Enemy" parent="." unique_id=1545852921 instance=ExtResource("12_kx1xp")]
+position = Vector2(437, -39)

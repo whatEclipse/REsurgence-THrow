@@ -14,7 +14,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var scene := get_tree().current_scene
-		if scene == null or scene.scene_file_path == "res://scenes/game.tscn":
+		if scene == null or scene.scene_file_path == "res://scenes/spawn_point.tscn":
 			print("blocked: wrong scene")
 			return
 

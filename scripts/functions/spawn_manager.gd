@@ -1,6 +1,6 @@
 extends Node
 
-const SPAWN_POINT_SCENE = preload("res://scenes/functions/spawn_point.tscn")
+const SPAWN_POINT_SCENE = preload("res://scenes/entities/spawn_point.tscn")
 const MIN_SPEED = 200.0
 const MAX_SPEED = 1000.0
 const SPEED_PER_PIXEL = 3.0
@@ -15,7 +15,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var scene := get_tree().current_scene
-		if scene == null or scene.scene_file_path == "res://scenes/functions/spawn_point.tscn":
+		if scene == null or scene.scene_file_path == "res://scenes/entities/spawn_point.tscn":
 			print("blocked: wrong scene")
 			return
 

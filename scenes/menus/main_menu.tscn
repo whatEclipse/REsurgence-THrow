@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bhv45ogvq6lg2"]
+[gd_scene format=3 uid="uid://bmdpcb4bq7g2a"]
 
 [ext_resource type="FontFile" uid="uid://cddvw5hbg2ife" path="res://assets/fonts/ka1.ttf" id="1_6bivr"]
 [ext_resource type="Texture2D" uid="uid://d2csgprtkbue0" path="res://assets/background/main_menu.jpg" id="2_imvie"]
@@ -33,7 +33,7 @@ func _on_quit_pressed() -> void:
 	get_tree().quit()
 "
 
-[node name="Game" type="Control" unique_id=547614773]
+[node name="Game2" type="Control" unique_id=547614773]
 layout_mode = 3
 anchors_preset = 0
 script = SubResource("GDScript_6bivr")

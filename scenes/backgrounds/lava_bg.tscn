@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbrg26dcbv0hg"]
 
-[ext_resource type="Texture2D" uid="uid://34gb87gb8vnl" path="res://assets/background/BG_full.png" id="1_dhf24"]
+[ext_resource type="Texture2D" uid="uid://34gb87gb8vnl" path="res://assets/background/BG_full.png" id="1_my37j"]
 
 [node name="lava_bg" type="Control" unique_id=1163805393]
 layout_mode = 3
@@ -16,5 +16,5 @@ offset_left = -159.0
 offset_top = -94.0
 offset_right = 161.0
 offset_bottom = 98.0
-texture = ExtResource("1_dhf24")
+texture = ExtResource("1_my37j")
 stretch_mode = 1

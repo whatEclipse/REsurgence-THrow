@@ -31,8 +31,3 @@ func _physics_process(delta: float) -> void:
 func _on_kill_detector_area_entered(area: Area2D) -> void:
 	if area.is_in_group("kill_zone"):
 		queue_free()
-
-
-func _on_kill_detector_body_entered(body: Node2D) -> void:
-	if body.is_in_group("kill_zone"):
-		queue_free()

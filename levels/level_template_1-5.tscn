@@ -164,5 +164,6 @@ position = Vector2(628, 352)
 shape = SubResource("WorldBoundaryShape2D_8ksrx")
 
 [node name="Goal" parent="." unique_id=731644249 instance=ExtResource("6_bnktl")]
+position = Vector2(953, -110)
 
 [node name="VictoryMenu" parent="." unique_id=22993511 instance=ExtResource("7_8ob0c")]

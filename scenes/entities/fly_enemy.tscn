@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bm4v6cvh35s14"]
+
+[ext_resource type="Script" uid="uid://cuodk8m01noqk" path="res://fly_enemy.gd" id="1_kbc71"]
+[ext_resource type="Texture2D" uid="uid://xou8i76xb4uv" path="res://assets/characters/fly/blue_fly_idle_or_flying_anim_strip_3.png" id="2_kbc71"]
+[ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="3_6xqbr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wfr3"]
+atlas = ExtResource("2_kbc71")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xqbr"]
+atlas = ExtResource("2_kbc71")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_veeox"]
+atlas = ExtResource("2_kbc71")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_flrxc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wfr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xqbr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_veeox")
+}],
+"loop": 2,
+"name": &"Flying",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(8, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
+size = Vector2(84, 72)
+
+[node name="Enemy" type="Node2D" unique_id=479615657]
+script = ExtResource("1_kbc71")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=39893068]
+sprite_frames = SubResource("SpriteFrames_flrxc")
+animation = &"Flying"
+autoplay = "Flying"
+frame_progress = 0.63441664
+
+[node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("3_6xqbr")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1512482582]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_4ra3w")
+
+[node name="TriggerArea" type="Area2D" parent="." unique_id=1463262672]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea" unique_id=525840000]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_8ksrx")
+
+[connection signal="body_entered" from="TriggerArea" to="." method="_on_trigger_area_body_entered"]
+[connection signal="body_exited" from="TriggerArea" to="." method="_on_trigger_area_body_exited"]

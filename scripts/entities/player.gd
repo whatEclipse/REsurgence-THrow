@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var collision_box: CollisionShape2D = $CollisionBox
 
 const SPEED = 100.0
 const JUMP_VELOCITY = -170.0
@@ -46,6 +47,7 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 	
 func die():
+	velocity = Vector2.ZERO
 	if isDying:
 		return
 	isDying = true
@@ -54,9 +56,9 @@ func die():
 	await animated_sprite.animation_finished
 	velocity = Vector2.ZERO
 	if not SpawnManager.respawn_player():
-		global_position = start_position # no flag placed yet
+		global_position = start_position + (Vector2(0,8)) #no flag placed yet
 	isDying = false
 	
 func jumpOn():
 	if isDying == false:
-		velocity.y -= 300
+		velocity.y = -1*abs(velocity.y* 0.5) - 200

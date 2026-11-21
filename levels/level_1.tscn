@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b85mbrl31enfv" path="res://scenes/entities/goal.tscn" id="1_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="1_n46q3"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="2_rus8k"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/mushroom_enemy.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="4_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://cppl13vbl5a10" path="res://scenes/backgrounds/forest_bg.tscn" id="5_n46q3"]
 [ext_resource type="PackedScene" uid="uid://dbrg26dcbv0hg" path="res://scenes/backgrounds/lava_bg.tscn" id="7_gwceb"]

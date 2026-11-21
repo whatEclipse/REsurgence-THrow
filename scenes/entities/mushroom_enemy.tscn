@@ -1,78 +1,78 @@
 [gd_scene format=3 uid="uid://cremjwkeoeldt"]
 
-[ext_resource type="Script" uid="uid://dqsu8fulbmwgf" path="res://scripts/entities/enemy.gd" id="1_4ra3w"]
+[ext_resource type="Script" uid="uid://dqsu8fulbmwgf" path="res://scripts/entities/mushroom_enemy.gd" id="1_4ra3w"]
 [ext_resource type="Texture2D" uid="uid://dyq851o6wka3l" path="res://assets/characters/mushroom/mushroom_walk_anim_strip_8.png" id="1_7p1mj"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="3_5uy6h"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_g63vu"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gttp"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfrhc"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_okqhp"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyjlt"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(64, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_flros"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(80, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_md484"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_igvsm"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(96, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ipns3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_34mld"]
 atlas = ExtResource("1_7p1mj")
 region = Rect2(112, 0, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_flrxc"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ksrx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_md0e3")
+"texture": SubResource("AtlasTexture_g63vu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4ra3w")
+"texture": SubResource("AtlasTexture_7gttp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5uy6h")
+"texture": SubResource("AtlasTexture_hfrhc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_c4w8v")
+"texture": SubResource("AtlasTexture_okqhp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xwavj")
+"texture": SubResource("AtlasTexture_eyjlt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nenq2")
+"texture": SubResource("AtlasTexture_flros")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_md484")
+"texture": SubResource("AtlasTexture_igvsm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ipns3")
+"texture": SubResource("AtlasTexture_34mld")
 }],
 "loop": 1,
-"name": &"Walking",
+"name": &"walking",
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
-size = Vector2(10, 13)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3f4h"]
+size = Vector2(17.53239, 6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
-size = Vector2(10, 1)
+size = Vector2(14, 5)
 
 [node name="Enemy" type="Node2D" unique_id=1545852921]
 script = ExtResource("1_4ra3w")
@@ -89,25 +89,24 @@ target_position = Vector2(10, 9)
 [node name="RayCastBottomL" type="RayCast2D" parent="." unique_id=130235764]
 target_position = Vector2(-10, 9)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=39893068]
-sprite_frames = SubResource("SpriteFrames_flrxc")
-animation = &"Walking"
-autoplay = "Walking"
-frame = 4
-frame_progress = 0.48533392
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=260151096]
+sprite_frames = SubResource("SpriteFrames_8ksrx")
+animation = &"walking"
+autoplay = "walking"
 
 [node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("3_5uy6h")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1512482582]
-position = Vector2(0, 1.5)
-shape = SubResource("RectangleShape2D_4ra3w")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=204504101]
+position = Vector2(0, 4)
+scale = Vector2(0.68444747, 1)
+shape = SubResource("RectangleShape2D_d3f4h")
 
 [node name="JumpOn" type="Area2D" parent="." unique_id=1463262672]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOn" unique_id=525840000]
-position = Vector2(0, -7.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpOn" unique_id=1172929625]
+position = Vector2(0, -6.5)
 shape = SubResource("RectangleShape2D_8ksrx")
 
 [connection signal="body_entered" from="JumpOn" to="." method="_on_jump_on_body_entered"]

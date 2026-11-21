@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="9_nu44e"]
 [ext_resource type="PackedScene" uid="uid://dnd66ee0n7o3a" path="res://scenes/menus/win_menu.tscn" id="10_kx1xp"]
 [ext_resource type="PackedScene" uid="uid://b85mbrl31enfv" path="res://scenes/entities/goal.tscn" id="11_m516p"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="12_kx1xp"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/mushroom_enemy.tscn" id="12_kx1xp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("1_qskt5")

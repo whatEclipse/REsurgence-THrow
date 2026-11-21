@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b6eo2an0blsrw" path="res://assets/tilemap/tileset.png" id="1_bmgug"]
 [ext_resource type="PackedScene" uid="uid://kspr25ufuj05" path="res://scenes/entities/player.tscn" id="2_20opy"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="3_8l0e1"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/mushroom_enemy.tscn" id="3_8l0e1"]
 [ext_resource type="PackedScene" uid="uid://b30xmi50drdro" path="res://scenes/entities/coin.tscn" id="3_jq78i"]
 [ext_resource type="PackedScene" uid="uid://bxjn11bv610mo" path="res://scenes/entities/spikes.tscn" id="4_lfnxh"]
 [ext_resource type="PackedScene" uid="uid://ubjnosojgn3m" path="res://scenes/menus/pause_menu.tscn" id="6_lsnkt"]

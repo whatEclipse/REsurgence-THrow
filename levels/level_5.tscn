@@ -7,11 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://dbrg26dcbv0hg" path="res://scenes/backgrounds/lava_bg.tscn" id="5_4pmw3"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="7_cl460"]
 [ext_resource type="PackedScene" uid="uid://b85mbrl31enfv" path="res://scenes/entities/goal.tscn" id="8_sbxnr"]
-[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/enemy.tscn" id="9_cicrg"]
+[ext_resource type="PackedScene" uid="uid://cremjwkeoeldt" path="res://scenes/entities/mushroom_enemy.tscn" id="9_cicrg"]
 [ext_resource type="PackedScene" uid="uid://bxjn11bv610mo" path="res://scenes/entities/spikes.tscn" id="9_xp58y"]
 [ext_resource type="PackedScene" uid="uid://cvpewpirfjwnt" path="res://scenes/functions/lava_pool.tscn" id="10_cicrg"]
 [ext_resource type="PackedScene" uid="uid://b30xmi50drdro" path="res://scenes/entities/coin.tscn" id="11_86l0o"]
 [ext_resource type="PackedScene" uid="uid://blc6crh0dw2j1" path="res://scenes/functions/lava_flow.tscn" id="12_4pmw3"]
+[ext_resource type="PackedScene" uid="uid://bm4v6cvh35s14" path="res://scenes/entities/fly_enemy.tscn" id="13_gci8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("2_cicrg")
@@ -174,11 +175,11 @@ texture = ExtResource("3_5cm8g")
 6:2/0 = 0
 7:2/0 = 0
 0:3/0 = 0
-0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -5.7060385, -5.397606, -5.397604, -5.7060394, 8)
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.074752, -4.9336376, 8, -4.933638, 8, 8, -5.940503, 8)
 1:3/0 = 0
-1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, -5.7060385, -8, -5.0891705, -8, 8)
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.9285316, 8, -4.933638, 8, 8, -8, 8)
 2:3/0 = 0
-2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(4.4723015, 8, 4.163868, -5.0891705, -8, -5.0891705, -8, 8)
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.074752, -4.9336376, -8, -4.933638, -8, 8, 5.940503, 8)
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:3/0 = 0
@@ -409,3 +410,6 @@ position = Vector2(504, -62)
 
 [node name="Coin2" parent="." unique_id=104011262 instance=ExtResource("11_86l0o")]
 position = Vector2(217, 8)
+
+[node name="Enemy2" parent="." unique_id=479615657 instance=ExtResource("13_gci8k")]
+position = Vector2(91, -33)

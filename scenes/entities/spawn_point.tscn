@@ -5,23 +5,37 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_c3ytd"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8wqli"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_i55ip"]
 atlas = ExtResource("2_i55ip")
 region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wqli"]
+atlas = ExtResource("2_i55ip")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ml0ts"]
+atlas = ExtResource("2_i55ip")
+region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8ksrx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_i55ip")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_8wqli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ml0ts")
 }],
-"loop": 1,
+"loop": 2,
 "name": &"default",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d1iiu"]
-size = Vector2(20, 8)
+size = Vector2(14, 8)
 
 [node name="SpawnPoint" type="RigidBody2D" unique_id=1279413989 groups=["flag"]]
 z_index = 2
@@ -35,7 +49,8 @@ script = ExtResource("1_c3ytd")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1298157761]
 z_index = 2
 sprite_frames = SubResource("SpriteFrames_8ksrx")
-frame_progress = 0.57285506
+autoplay = "default"
+frame_progress = 0.8294345
 
 [node name="KillDetector" type="Area2D" parent="." unique_id=951306132]
 

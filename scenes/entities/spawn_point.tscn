@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dr08pijwig0ao"]
 
 [ext_resource type="Script" uid="uid://byqnbvnxrbkta" path="res://scripts/entities/spawn_point.gd" id="1_c3ytd"]
-[ext_resource type="Texture2D" uid="uid://b2gnkyajo41yx" path="res://assets/collectibles/spawnpoint ball.png" id="2_ml0ts"]
-[ext_resource type="Texture2D" uid="uid://cgxp5nx46wy3r" path="res://assets/collectibles/spawnpoint ball opening.png" id="3_8gw6y"]
-[ext_resource type="Texture2D" uid="uid://dnemp4uwqxg5d" path="res://assets/collectibles/spawnpointnoroots.png" id="4_3aqr1"]
+[ext_resource type="Texture2D" uid="uid://b2gnkyajo41yx" path="res://assets/mechanics/spawnpoint ball.png" id="2_ml0ts"]
+[ext_resource type="Texture2D" uid="uid://cgxp5nx46wy3r" path="res://assets/mechanics/spawnpoint ball opening.png" id="3_8gw6y"]
+[ext_resource type="Texture2D" uid="uid://dnemp4uwqxg5d" path="res://assets/mechanics/spawnpointnoroots.png" id="4_3aqr1"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_c3ytd"]
 

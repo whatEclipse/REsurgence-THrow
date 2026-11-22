@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhabmia61b4pd"
-path="res://.godot/imported/spawnpoint.png-4c8614e0bb2ae4e89d98789a235b1e33.ctex"
+path="res://.godot/imported/spawnpoint.png-9a4f3698a4846c12f090724ec21e2b66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/collectibles/spawnpoint.png"
-dest_files=["res://.godot/imported/spawnpoint.png-4c8614e0bb2ae4e89d98789a235b1e33.ctex"]
+source_file="res://assets/mechanics/spawnpoint.png"
+dest_files=["res://.godot/imported/spawnpoint.png-9a4f3698a4846c12f090724ec21e2b66.ctex"]
 
 [params]
 

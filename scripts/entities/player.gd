@@ -56,8 +56,11 @@ func die():
 	await animated_sprite.animation_finished
 	velocity = Vector2.ZERO
 	if not SpawnManager.respawn_player():
-		global_position = start_position + (Vector2(0,8)) #no flag placed yet
+		global_position = start_position #no flag placed yet
+	animated_sprite.play_backwards("Death")
+	await animated_sprite.animation_finished
 	isDying = false
+	
 	
 func jumpOn():
 	if isDying == false:

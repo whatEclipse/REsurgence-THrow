@@ -204,7 +204,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_iywi5")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Hit",
 "speed": 8.0
 }, {
@@ -300,7 +300,7 @@ shape = SubResource("RectangleShape2D_flrxc")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1851740296]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8ksrx")
-animation = &"Death"
+animation = &"Hit"
 autoplay = "Idle"
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=2103579018]

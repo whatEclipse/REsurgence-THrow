@@ -1,45 +1,49 @@
 [gd_scene format=3 uid="uid://dr08pijwig0ao"]
 
 [ext_resource type="Script" uid="uid://byqnbvnxrbkta" path="res://scripts/entities/spawn_point.gd" id="1_c3ytd"]
-[ext_resource type="Texture2D" uid="uid://b2gnkyajo41yx" path="res://assets/mechanics/spawnpoint ball.png" id="2_ml0ts"]
-[ext_resource type="Texture2D" uid="uid://cgxp5nx46wy3r" path="res://assets/mechanics/spawnpoint ball opening.png" id="3_8gw6y"]
-[ext_resource type="Texture2D" uid="uid://dnemp4uwqxg5d" path="res://assets/mechanics/spawnpointnoroots.png" id="4_3aqr1"]
+[ext_resource type="Texture2D" uid="uid://06ll8p6fdr83" path="res://assets/mechanics/spawnpoint/spawnpoint ball.png" id="2_ml0ts"]
+[ext_resource type="Texture2D" uid="uid://d0pymqixgr5qx" path="res://assets/mechanics/spawnpoint/spawnpoint ball opening.png" id="3_8gw6y"]
+[ext_resource type="Texture2D" uid="uid://dnemp4uwqxg5d" path="res://assets/mechanics/spawnpoint/spawnpointnoroots.png" id="4_3aqr1"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_c3ytd"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gec17"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ml0ts"]
 atlas = ExtResource("2_ml0ts")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ddn4t"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gw6y"]
 atlas = ExtResource("2_ml0ts")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_e5mav"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3aqr1"]
 atlas = ExtResource("2_ml0ts")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ulww5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gec17"]
 atlas = ExtResource("2_ml0ts")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddn4t"]
+atlas = ExtResource("3_8gw6y")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5mav"]
+atlas = ExtResource("3_8gw6y")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulww5"]
+atlas = ExtResource("3_8gw6y")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lduy5"]
+atlas = ExtResource("3_8gw6y")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kwrk7"]
 atlas = ExtResource("3_8gw6y")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2k5ur"]
-atlas = ExtResource("3_8gw6y")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_daulg"]
-atlas = ExtResource("3_8gw6y")
-region = Rect2(48, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m4cmx"]
-atlas = ExtResource("3_8gw6y")
 region = Rect2(64, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4tyvy"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2k5ur"]
 atlas = ExtResource("3_8gw6y")
 region = Rect2(80, 0, 16, 16)
 
@@ -59,8 +63,22 @@ region = Rect2(32, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gec17")
+"texture": SubResource("AtlasTexture_ml0ts")
 }, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gw6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3aqr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gec17")
+}],
+"loop": 1,
+"name": &"ball",
+"speed": 12.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ddn4t")
 }, {
@@ -69,26 +87,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ulww5")
-}],
-"loop": 1,
-"name": &"ball",
-"speed": 12.0
 }, {
-"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lduy5")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kwrk7")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2k5ur")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_daulg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m4cmx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4tyvy")
 }],
 "loop": 0,
 "name": &"ballopen",
@@ -126,11 +133,11 @@ script = ExtResource("1_c3ytd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1298157761]
 z_index = 2
-position = Vector2(0, -4.5)
+position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_8ksrx")
 animation = &"ball"
 autoplay = "ball"
-frame_progress = 0.83515483
+frame_progress = 0.3664232
 
 [node name="KillDetector" type="Area2D" parent="." unique_id=951306132]
 

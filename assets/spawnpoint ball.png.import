@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgxp5nx46wy3r"
-path="res://.godot/imported/spawnpoint ball opening.png-f1ed92121a67b5b53f4cf72f2e517422.ctex"
+uid="uid://bls8qukvk2lfq"
+path="res://.godot/imported/spawnpoint ball.png-bbaec0bea21409dfaaae69e42aeddfd8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mechanics/spawnpoint ball opening.png"
-dest_files=["res://.godot/imported/spawnpoint ball opening.png-f1ed92121a67b5b53f4cf72f2e517422.ctex"]
+source_file="res://assets/spawnpoint ball.png"
+dest_files=["res://.godot/imported/spawnpoint ball.png-bbaec0bea21409dfaaae69e42aeddfd8.ctex"]
 
 [params]
 

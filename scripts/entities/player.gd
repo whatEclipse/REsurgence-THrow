@@ -6,6 +6,7 @@ extends CharacterBody2D
 const SPEED = 100.0
 const JUMP_VELOCITY = -170.0
 var isDying = false
+var push_force = 30
 
 var start_position: Vector2
 
@@ -45,6 +46,12 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.flip_h = false;
 
 		move_and_slide()
+		
+		
+	for i in get_slide_collision_count():
+		var c = get_slide_collision(i)
+		if c.get_collider().is_in_group("pushable"):
+			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
 	
 func die():
 	velocity = Vector2.ZERO

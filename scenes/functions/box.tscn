@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cj01yx4redwen"]
+
+[ext_resource type="Texture2D" uid="uid://yrts44hmn544" path="res://assets/mechanics/Box.png" id="1_rtht0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg1h1"]
+atlas = ExtResource("1_rtht0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_flrxc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rg1h1")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8b4n"]
+size = Vector2(16, 16)
+
+[node name="Box" type="RigidBody2D" unique_id=1993734363 groups=["pushable"]]
+inertia = 0.5
+lock_rotation = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1534337701]
+sprite_frames = SubResource("SpriteFrames_flrxc")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1325719199]
+shape = SubResource("RectangleShape2D_r8b4n")

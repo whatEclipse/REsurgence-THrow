@@ -50,3 +50,8 @@ func has_next_level() -> bool:
 
 func play_next_level() -> void:
 	play_level(get_current_level() + 1)
+	
+	
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("respawn"):
+		get_tree().reload_current_scene()

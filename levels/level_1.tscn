@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="4_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://cppl13vbl5a10" path="res://scenes/backgrounds/forest_bg.tscn" id="5_n46q3"]
 [ext_resource type="PackedScene" uid="uid://dbrg26dcbv0hg" path="res://scenes/backgrounds/lava_bg.tscn" id="7_gwceb"]
+[ext_resource type="PackedScene" uid="uid://cj01yx4redwen" path="res://scenes/functions/box.tscn" id="9_3sk1a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_52xoc"]
 texture = ExtResource("1_bswci")
@@ -193,3 +194,6 @@ scale = Vector2(4, 4)
 offset_transform_scale = Vector2(4, 4)
 
 [node name="Game" parent="." unique_id=818478358 instance=ExtResource("1_n46q3")]
+
+[node name="Box" parent="." unique_id=1993734363 instance=ExtResource("9_3sk1a")]
+position = Vector2(85, 4)

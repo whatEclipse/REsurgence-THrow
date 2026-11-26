@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cvpewpirfjwnt" path="res://scenes/functions/lava_pool.tscn" id="10_cicrg"]
 [ext_resource type="PackedScene" uid="uid://b30xmi50drdro" path="res://scenes/entities/coin.tscn" id="11_86l0o"]
 [ext_resource type="PackedScene" uid="uid://blc6crh0dw2j1" path="res://scenes/functions/lava_flow.tscn" id="12_4pmw3"]
-[ext_resource type="PackedScene" uid="uid://bm4v6cvh35s14" path="res://scenes/entities/fly_enemy.tscn" id="13_gci8k"]
+[ext_resource type="PackedScene" uid="uid://cj01yx4redwen" path="res://scenes/functions/box.tscn" id="13_gci8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cynta"]
 texture = ExtResource("2_cicrg")
@@ -411,5 +411,6 @@ position = Vector2(504, -62)
 [node name="Coin2" parent="." unique_id=104011262 instance=ExtResource("11_86l0o")]
 position = Vector2(217, 8)
 
-[node name="Enemy2" parent="." unique_id=479615657 instance=ExtResource("13_gci8k")]
-position = Vector2(91, -33)
+[node name="Box" parent="." unique_id=1993734363 instance=ExtResource("13_gci8k")]
+position = Vector2(119, 9)
+can_sleep = false

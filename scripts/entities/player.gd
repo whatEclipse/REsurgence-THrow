@@ -2,16 +2,20 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_box: CollisionShape2D = $CollisionBox
+@onready var aim_pivot: Node2D = $AimPivot
+@onready var arrow: AnimatedSprite2D = $AimPivot/Arrow
 
 const SPEED = 100.0
 const JUMP_VELOCITY = -170.0
 var isDying = false
 var push_force = 30
+var charging := false
 
 var start_position: Vector2
 
 func _ready() -> void:
 	start_position = global_position
+	aim_pivot.visible = false
 
 func _physics_process(delta: float) -> void:
 
@@ -52,7 +56,20 @@ func _physics_process(delta: float) -> void:
 		var c = get_slide_collision(i)
 		if c.get_collider().is_in_group("pushable"):
 			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
-	
+
+func _process(delta: float) -> void:
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		if not charging:
+			charging = true
+			aim_pivot.visible = true
+			arrow.play("default")
+		aim_pivot.look_at(get_global_mouse_position())
+	elif charging:
+		charging = false
+		aim_pivot.visible = false
+		arrow.stop()
+		var dir := (get_global_mouse_position() - global_position).normalized()
+
 func die():
 	velocity = Vector2.ZERO
 	if isDying:

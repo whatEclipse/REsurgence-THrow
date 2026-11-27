@@ -3,7 +3,7 @@ extends Node
 const SPAWN_POINT_SCENE = preload("res://scenes/entities/spawn_point.tscn")
 const MIN_SPEED = 200.0      
 const MAX_SPEED = 600.0     
-const MAX_CHARGE_TIME = 1.5  
+const MAX_CHARGE_TIME = 1.5 
 
 
 var current_flag: RigidBody2D
@@ -56,7 +56,7 @@ func _launch_flag() -> void:
 
 	current_flag = flag
 	scene.add_child(current_flag)
-	current_flag.global_position = player.global_position + Vector2(0, -8)
+	current_flag.global_position = player.global_position + Vector2(0, -4)
 	current_flag.add_collision_exception_with(player)
 
 	var charge := _charge_time / MAX_CHARGE_TIME

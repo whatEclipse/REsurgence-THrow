@@ -9,11 +9,11 @@ size = Vector2(14, 14)
 [node name="Spikes" type="Node2D" unique_id=1115962648]
 z_index = -1
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1635500137]
-texture = ExtResource("1_xbcdo")
-
 [node name="Killzone" parent="." unique_id=2069752206 instance=ExtResource("2_bflj7")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=287544171]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_8ksrx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1635500137]
+texture = ExtResource("1_xbcdo")

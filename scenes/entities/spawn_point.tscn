@@ -120,10 +120,10 @@ animations = [{
 radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ml0ts"]
-radius = 6.1
+radius = 6.25
 
 [node name="SpawnPoint" type="RigidBody2D" unique_id=1279413989 groups=["flag"]]
-z_index = 2
+z_index = 4
 collision_layer = 4
 collision_mask = 255
 physics_material_override = SubResource("PhysicsMaterial_c3ytd")

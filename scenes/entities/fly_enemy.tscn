@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bm4v6cvh35s14"]
 
-[ext_resource type="Script" uid="uid://cuodk8m01noqk" path="res://fly_enemy.gd" id="1_kbc71"]
+[ext_resource type="Script" uid="uid://cuodk8m01noqk" path="res://scripts/entities/fly_enemy.gd" id="1_kbc71"]
 [ext_resource type="Texture2D" uid="uid://xou8i76xb4uv" path="res://assets/characters/fly/blue_fly_idle_or_flying_anim_strip_3.png" id="2_kbc71"]
 [ext_resource type="PackedScene" uid="uid://bues4n1ohyg7a" path="res://scenes/functions/killzone.tscn" id="3_6xqbr"]
 

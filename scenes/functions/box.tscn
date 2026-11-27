@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://yrts44hmn544" path="res://assets/mechanics/Box.png" id="1_rtht0"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g63vu"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rg1h1"]
 atlas = ExtResource("1_rtht0")
 region = Rect2(0, 0, 16, 16)
@@ -21,7 +23,7 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="Box" type="RigidBody2D" unique_id=1993734363 groups=["pushable"]]
-inertia = 0.5
+physics_material_override = SubResource("PhysicsMaterial_g63vu")
 lock_rotation = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1534337701]

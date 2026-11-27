@@ -41,5 +41,5 @@ func touched_floor():
 		
 
 func _on_kill_detector_area_entered(area: Area2D) -> void:
-	if area.is_in_group("kill_zone"):
+	if area.is_in_group("spawnpoint_kill_zone"):
 		queue_free()

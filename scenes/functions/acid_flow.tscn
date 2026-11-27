@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://cj200lib1rh0p"]
+
+[ext_resource type="Texture2D" uid="uid://cd4dyuq60f1co" path="res://assets/mechanics/AcidFallAnimation.png" id="1_hdggp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yoo5"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqk1w"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srhs5"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8261q"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykocf"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohwb0"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpn3i"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks8a2"]
+atlas = ExtResource("1_hdggp")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ksrx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4yoo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqk1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srhs5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8261q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykocf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohwb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpn3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ks8a2")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flrxc"]
+size = Vector2(16, 16)
+
+[node name="AcidFlow" type="Node2D" unique_id=1375002308 groups=["spawnpoint_kill_zone"]]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=643374814]
+sprite_frames = SubResource("SpriteFrames_8ksrx")
+frame_progress = 0.84908205
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1272490223]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=756169995]
+shape = SubResource("RectangleShape2D_flrxc")

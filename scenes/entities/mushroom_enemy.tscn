@@ -74,7 +74,7 @@ size = Vector2(17.53239, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8ksrx"]
 size = Vector2(14, 5)
 
-[node name="Enemy" type="Node2D" unique_id=1545852921]
+[node name="Enemy" type="Node2D" unique_id=1221572192]
 script = ExtResource("1_4ra3w")
 
 [node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1718203662]

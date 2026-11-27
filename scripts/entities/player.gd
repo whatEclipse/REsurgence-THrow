@@ -68,7 +68,10 @@ func _process(delta: float) -> void:
 		charging = false
 		aim_pivot.visible = false
 		arrow.stop()
-		var dir := (get_global_mouse_position() - global_position).normalized()
+		var dir := -(get_global_mouse_position() - global_position).normalized()
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT) and charging == true:
+		aim_pivot.visible = false
+		
 
 func die():
 	velocity = Vector2.ZERO

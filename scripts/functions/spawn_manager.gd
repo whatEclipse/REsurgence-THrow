@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 	
 	if _charging:
 		_charge_time = minf(_charge_time + delta, MAX_CHARGE_TIME)
+		
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -24,6 +25,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif _charging:
 			_charging = false
 			_launch_flag()
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and _charging == true:
+		_charging = false
 
 
 func _launch_flag() -> void:
@@ -58,7 +61,7 @@ func _launch_flag() -> void:
 
 	var charge := _charge_time / MAX_CHARGE_TIME
 	var speed := lerpf(MIN_SPEED, MAX_SPEED, charge)
-	current_flag.linear_velocity = to_mouse.normalized() * speed
+	current_flag.linear_velocity = to_mouse.normalized() * -speed
 	SFXManager.play_launch()
 
 func respawn_player() -> bool:
